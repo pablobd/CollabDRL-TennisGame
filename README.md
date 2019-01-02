@@ -13,3 +13,17 @@ The task is episodic, and in order to solve the environment, your agents must ge
 
 The environment is considered solved, when the average (over 100 episodes) of those scores is at least +0.5.
 
+## Technical Requirements
+
+The project environment (provided by Udacity) is similar to, but not identical to the Tennis environment on the [Unity ML-Agents GitHub page](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md). It is required to use this alternative project environment, which available in this github page.
+
+First of all, you need python 3 and conda. We suggest to use the [Anaconda distribution](https://www.anaconda.com/download/#linux), although other options are available. Follow the instructions at the github [repository dlrn](https://github.com/udacity/deep-reinforcement-learning) to create an environment for the project, install dependencies and create a kernel.
+
+Select the environment that matches your operating system:
+
+* Linux: [click here]()(https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip)
+* Mac OSX: [click here]()https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip)
+* Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86.zip)
+* Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip)
+
+
