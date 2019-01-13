@@ -68,7 +68,7 @@ class Actor(nn.Module):
         
         # forward through each layer in `hidden_layers`, with ReLU activation
         for linear in self.hidden_layers:
-            x = F.relu(linear(x))
+            x = F.leaky_relu(linear(x))
         
         # forward final layer with tanh activation (-1, 1)
         return torch.tanh(self.output(x))
@@ -91,6 +91,7 @@ class Critic(nn.Module):
         self.seed = torch.manual_seed(seed)
         
         # initial layer
+        self.bn0 = nn.BatchNorm1d(state_size)
         self.hidden_layers = nn.ModuleList([nn.Linear(state_size, hidden_layers[0])])
         
         # hidden layers
@@ -129,11 +130,14 @@ class Critic(nn.Module):
             actions (tensor): Action vector
         """
         
-        # forward through first layer
-        x = F.leaky_relu(self.hidden_layers[0](states))
+        state = states.view(-1, 48)
+        action = actions.view(-1, 4)
         
+        # forward through first layer
+        x = F.leaky_relu(self.hidden_layers[0](self.bn0(state)))
+                
         # concatenate output of first layer and action vector
-        x = torch.cat((x, actions), dim = 1)
+        x = torch.cat((x, action), dim = 1)
         
         # forward through each layer in `hidden_layers`, with Leaky ReLU activation
         for linear in self.hidden_layers[1:]:
