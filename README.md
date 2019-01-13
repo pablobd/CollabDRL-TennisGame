@@ -19,8 +19,8 @@ The project environment (provided by Udacity) is similar to, but not identical t
 
 First of all, you need python 3 and conda. We suggest to use the [Anaconda distribution](https://www.anaconda.com/download/#linux), although other options are available. The project has the following dependencies: pytorch, matplotlib, numpy, and collections. You need to install these dependencies on a conda environment and create a kernel to run this notebook. Follow the instructions of the udacity DRL nano degree at github [repository drlnd](https://github.com/udacity/deep-reinforcement-learning) to create an environment for the project, install dependencies (pytorch, matplotlib, numpy, and collections) and create a kernel. You will not need to install Unity, because Udacity provides the Unity environment. Select the environment that matches your operating system:
 
-* Linux: [click here]()(https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip)
-* Mac OSX: [click here]()https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip)
+* Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip)
+* Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip)
 * Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86.zip)
 * Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip)
 
